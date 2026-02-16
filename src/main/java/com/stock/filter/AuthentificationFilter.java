@@ -29,9 +29,7 @@ public class AuthentificationFilter implements Filter {
         if (session != null && session.getAttribute("user") != null) {
             chain.doFilter(request, response);
         } else {
-            req.setAttribute("erreur", "Utilisateur non autorisé");
-            req.getRequestDispatcher("/WEB-INF/vues/login.jsp")
-                    .forward(req, res);
+            res.sendRedirect(req.getContextPath() + "/login");
         }
     }
 

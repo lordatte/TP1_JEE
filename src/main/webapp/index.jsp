@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "No THING HERE hehehe" %>
+<h1><%= "Login" %>
 </h1>
 <br/>
 <a href="${pageContext.request.contextPath}/login">

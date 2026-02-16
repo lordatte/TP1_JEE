@@ -7,17 +7,13 @@ public class Produit implements Serializable {
     private String nom;
     private double prix;
 
-    // Constructeur sans arguments (obligatoire pour un Bean)
     public Produit() {}
 
-    // Constructeur pratique
     public Produit(int id, String nom, double prix) {
         this.id = id;
         this.nom = nom;
         this.prix = prix;
     }
-
-    // Getters et Setters publics
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
