@@ -23,10 +23,6 @@
             <td>${produit.prix}</td>
         </tr>
     </c:forEach>
-
-
-
-
 </table>
 <form method="POST" action="logout">
 
